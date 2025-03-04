@@ -1,0 +1,4 @@
+# filepath: /Users/meclawh/studybot/studybot/requirements.txt
+Flask
+python-dotenv
+openai>=1.0.0

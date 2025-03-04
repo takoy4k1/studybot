@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Chatbot</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        form { margin-top: 20px; }
+        input { width: 70%; padding: 10px; }
+        button { padding: 10px 15px; margin-left: 10px; cursor: pointer; }
+        .response { margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Chatbot</h1>
+    <form method="POST">
+        <input type="text" name="user_input" placeholder="Say something..." required>
+        <button type="submit">Send</button>
+    </form>
+    {% if bot_response %}
+        <div class="response">Bot: {{ bot_response }}</div>
+    {% endif %}
+</body>
+</html>
